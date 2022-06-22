@@ -28,11 +28,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/webapp</name>
-			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Users/%EC%9D%B4%EB%AA%85%ED%9D%AC/Desktop/webapp</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
