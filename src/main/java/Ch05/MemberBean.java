@@ -1,45 +1,37 @@
 package Ch05;
 
 public class MemberBean {
-	private String name;
-	private String age;
-	private String add;
-	private String nickname;
-	private String height;
-	public String getName() {
-		return name;
+	private String email;
+	private String pwd;
+	private String addr1;
+	private String addr2;
+	public String getEmail() {
+		return email;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	public String getAge() {
-		return age;
+	public String getPwd() {
+		return pwd;
 	}
-	public void setAge(String age) {
-		this.age = age;
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
-	public String getAdd() {
-		return add;
+	public String getAddr1() {
+		return addr1;
 	}
-	public void setAdd(String add) {
-		this.add = add;
+	public void setAddr1(String addr1) {
+		this.addr1 = addr1;
 	}
-	public String getNickname() {
-		return nickname;
+	public String getAddr2() {
+		return addr2;
 	}
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
-	}
-	public String getHeight() {
-		return height;
-	}
-	public void setHeight(String height) {
-		this.height = height;
+	public void setAddr2(String addr2) {
+		this.addr2 = addr2;
 	}
 	@Override
 	public String toString() {
-		return "MemberBean [name=" + name + ", age=" + age + ", add=" + add + ", nickname=" + nickname + ", height="
-				+ height + "]";
+		return "MemberBean [email=" + email + ", pwd=" + pwd + ", addr1=" + addr1 + ", addr2=" + addr2 + "]";
 	}
 	
 	

@@ -12,10 +12,9 @@
 	<jsp:setProperty name = "bean" property = "*"/>
 	
 	받은 값 : <%=bean.toString() %><br>
-	이름 : <%=bean.getName() %><br>
-	나이 : <%=bean.getAge() %><br>
-	주소 : <%=bean.getAdd() %><br>
-	닉네임 : <%=bean.getNickname() %><br>
-	키 : <%=bean.getHeight() %>
+	이메일 : <%=bean.getEmail() %><br>
+	비밀번호 : <%=bean.getPwd() %><br>
+	주소1 : <%=bean.getAddr1() %><br>
+	주소2 : <%=bean.getAddr2() %><br>
 </body>
 </html>
