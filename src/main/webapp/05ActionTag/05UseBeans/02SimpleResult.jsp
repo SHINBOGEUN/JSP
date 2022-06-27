@@ -13,7 +13,7 @@
 		//BookBean 클래스로 객체 생성후 각 속송에 book관련 parameter값 저장
 		//화면에 출력(.toString()을 이용해보세요)
 		
-		String BC = request.getParameter("bookcode");
+		/* String BC = request.getParameter("bookcode");
 		String BN = request.getParameter("bookname");
 		String BP = request.getParameter("bookprice");
 		
@@ -21,10 +21,14 @@
 		
 		bean.setBookcode(BC);
 		bean.setBookname(BN);
-		bean.setBookprice(BP);
+		bean.setBookprice(BP); */
 	%>
-	
+	<jsp:useBean id="bean" class="Ch05.BookBean" scope = "page" />
+	<jsp:setProperty name = "bean" property="*"/>
 	받은 값 <%=bean.toString() %><br>
+	코드 : <%=bean.getBookcode() %>
+	제목 : <%=bean.getBookname() %>
+	카드 : <%=bean.getBookprice() %>
 	
 	
 	
