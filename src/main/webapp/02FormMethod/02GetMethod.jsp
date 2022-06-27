@@ -1,18 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="02result.jsp" method = "get">
-	divÅÂ±× width : <input type = "text" name = "divw"><br>
-	divÅÂ±× height : <input type = "text" name = "divh"><br>
-	divÅÂ±× radius : <input type = "text" name = "divr"><br>
-	divÅÂ±× background : <input type ="text" name ="divb"><br>
-	<input type="submit" value = "Àü¼Û">
+	
+	<form action="02result.jsp" method="get">
+										<!-- name : ê°ê° ë³€ìˆ˜ëª… -->
+		div íƒœê·¸ width : <input type="text" name="divw"><br>
+		div íƒœê·¸ height : <input type="text" name="divh"><br>
+		div íƒœê·¸ radius : <input type="text" name="divr"><br>
+		<input type="submit" value="ì „ì†¡">
+		
 	</form>
 </body>
 </html>

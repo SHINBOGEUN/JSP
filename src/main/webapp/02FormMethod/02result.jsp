@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-     <%
-		String divw = request.getParameter("divw");
-		String divh = request.getParameter("divh");
-		String divr = request.getParameter("divr");
-		String divb = request.getParameter("divb");
-	%>
+    
+    <%
+    	String w = request.getParameter("divw");
+	    String h = request.getParameter("divh");
+	    String r = request.getParameter("divr");
+    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,22 +13,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<style>
+
+<style>
 	div{
 		border:1px solid gray;
 	}
-	</style>
+</style>
 
-
-	<div id ="d1">1</div>
+	<div id=d1></div>
 	
 	<script>
-		let d1 = document.getElementById("d1");
-		d1.style.width ="<%=divw%>px";
-		d1.style.height="<%=divh%>px";
-		d1.style.borderRadius = "<%=divr%>%"
-		d1.style.backgroundColor="<%=divb %>";
+		d1 = document.getElementById("d1");
+		d1.style.width="<%=w%>px";
+		d1.style.height="<%=h%>px";
+		d1.style.borderRadius="<%=r%>%";
 	</script>
-	
 </body>
 </html>

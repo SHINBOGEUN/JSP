@@ -1,20 +1,26 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
     <%
-		String title = request.getParameter("title");
+	 /* request 내장객체 */
+		String title = request.getParameter("title");	
 		String bgcolor = request.getParameter("bgcolor");
-		if(bgcolor.equals("etc")){
+		/* 분기처리 가능! */
+		if(bgcolor.equals("etc"))
+		{
 			bgcolor="blue";
 		}
 	%>
+	
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title><%=title %></title>
 </head>
 <body bgcolor=<%=bgcolor %>>
-
-<h1><%=title %></h1>
+<!-- 폼으로부터 전달된 내용을 리퀘스트 내장객체에 저장하여 
+키와 밸류로 저장된 것을 변수명(파라미터)을 통해 밸류값을 받아옴 -->
+	<h1><%=title %></h1>
+	
 </body>
 </html>
