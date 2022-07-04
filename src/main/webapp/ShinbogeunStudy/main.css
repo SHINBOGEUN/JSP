@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+main {
+	width: 80%;
+	margin: 0 auto;
+}
+select {
+	border: none;
+	background-color: lightgray;
+	margin-right: 30px;
+	font-size: 1.5rem;
+}
+
+option {
+	font-size: 1.5rem;
+}
+
+#nav-title {
+	display: flex;
+	width: 20%;
+	justify-content: space-around;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: lightgray;
+}

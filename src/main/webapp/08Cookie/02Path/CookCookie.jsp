@@ -18,7 +18,7 @@
 		Cookie c2 = new Cookie("C2", "Value2");
 		c2.setMaxAge(60*60);
 		c2.setPath("./");	//현재 디렉토리에서 접근시만 전달
-		Cookie c3 = new Cookie("C3", "Value3");t
+		Cookie c3 = new Cookie("C3", "Value3");
 		c3.setMaxAge(60*60);
 		c3.setPath("/Ch08Cookie/C01Basic/"); //해당 경로로 요청했을때만 쿠키전달
 		

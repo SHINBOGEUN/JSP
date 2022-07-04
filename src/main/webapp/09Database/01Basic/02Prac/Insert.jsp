@@ -9,12 +9,6 @@
 <body>
 	<%@page import="java.sql.*,java.util.*"%>
 	<%
-	
-	
-	
-	
-	
-	
 	String url = "jdbc:oracle:thin:@localhost:1521:xe"; //URL
 	String id = "book_ex"; //ID
 	String pw = "1234"; //PW

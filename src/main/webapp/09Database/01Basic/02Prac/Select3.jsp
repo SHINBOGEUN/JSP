@@ -23,19 +23,26 @@
 	
 	String num1 = request.getParameter("start");
 	String num2 = request.getParameter("end"); 
+	int end = 0;
+	
+	if(num2 !=null){
+		
+		end = Integer.parseInt(num2);
+	}
+		
 	
 	BookDTO search = new BookDTO();
-	ArrayList<BookDTO> list = dao.Select(1, 100);
+	ArrayList<BookDTO> list = dao.Select(1, end);
 	
 	%>
 	<div id=wrapper class="container-md w-75" style="margin: 10px auto">
-		<form action="Select2.jsp">
+		<form action="Select3.jsp">
 			<div class="row mb-3">
 				<div class="col-5" style="width: 130px;">
 					<select name=type class="form-select w-100" id=search>
-						<option value="C">코드</option>
-						<option value="N" selected>이름</option>
-						<option value="P">출판산</option>
+						<option value="C">필코드코드</option>
+						<option value="N" selected>보름</option>
+						<option value="P">필욱이판사</option>
 
 					</select>
 				</div>
@@ -54,9 +61,9 @@
 		</form>
 		<table class="table table-stripde">
 			<tr>
-				<th>NO</th>
-				<th>BookCode</th>
-				<th>BookName</th>
+				<th>넘버</th>
+				<th>보코드</th>
+				<th>borName</th>
 				<th>Publisher</th>
 				<th>TotalPage</th>
 				<th>Amount</th>

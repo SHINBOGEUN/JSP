@@ -11,7 +11,7 @@
 		ID : <input name = userid><br>
 		PW : <input type = password name = pwd><br>
 		<input type = submit> 
-	</form>
+		</form>
 	
 </body>
 </html>
