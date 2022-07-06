@@ -41,7 +41,7 @@ public class boardDAO {
 		ArrayList<boardDTO> list = new ArrayList();
 
 		try {
-			pstmt = conn.prepareStatement("select * from (select rownum rnum from board_tbl order by desc) where rnum between ? and ?");
+			pstmt = conn.prepareStatement("SELECT * FROM (SELECT ROWNUM AS NUM,board_tbl.* FROM board_tbl) WHERE NUM BETWEEN ? AND ?");
 			pstmt.setInt(1,start);
 			pstmt.setInt(2, end);
 			rs = pstmt.executeQuery();

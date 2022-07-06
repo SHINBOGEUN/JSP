@@ -45,9 +45,17 @@ tr {
 	
 	
 	ArrayList<boardDTO> list = dao.Select();
-	ArrayList<boardDTO> list1 = dao.Select(end , end*10);
+	ArrayList<boardDTO> list1 = dao.Select(10 * (end -1) , end*10);
+	
 	System.out.println(list1.size());
-	int pagenum = list.size() / 10 + 1;
+	
+	int paging = list.size() % 10;
+	int pagenum = 0;
+	if(paging == 0){
+		pagenum = list.size() / 10;		
+	}else{
+		pagenum = list.size() / 10 +1;		
+	}
 	
 	%>
 	<nav>
@@ -80,7 +88,7 @@ tr {
 			for (int i = 0; i < list1.size(); i++) {
 			%>
 			<tr>
-				<td><%=i + 1 %></td>
+				<td><%=end + i %></td>
 				<td><%=list.get(i).getTitle() %></td>
 				<td><%=list.get(i).getWriter() %></td>
 				<td><%=list.get(i).getDay() %></td>

@@ -25,10 +25,11 @@
 	
 	
 	<main>
-		<form action="02LoginProc.jsp">
+		<form action="02LoginProc.jsp" align=center>
 		ID : <input name = userid><br>
 		PW : <input type = password name = pwd><br>
-		<input type = submit> 
+		<input type = submit value = Login> 
+		<a href = "/">회원가입</a>
 		</form>
 	</main>
 </body>
